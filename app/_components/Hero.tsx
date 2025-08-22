@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="py-40 mx-20 h-screen flex flex-col justify-between"
+      className="py-20 sm:py-28 md:py-40 mx-4 sm:mx-8 md:mx-20 h-auto md:h-screen flex flex-col justify-between"
     >
-      <div className="absolute top-6 right-20 flex items-center gap-4">
+      <div className="absolute top-4 sm:top-6 right-4 sm:right-8 md:right-20 flex items-center gap-3 sm:gap-4">
         <a
           href="/resume.pdf"
           target="_blank"
@@ -19,7 +19,7 @@ const Hero = () => {
           aria-label="Download resume (PDF)"
           className="text-foreground hover:scale-105 transition cursor-pointer"
         >
-          <FaFilePdf size={20} />
+          <FaFilePdf size={18} />
         </a>
 
         <a
@@ -29,7 +29,7 @@ const Hero = () => {
           aria-label="LinkedIn"
           className="text-foreground hover:scale-105 transition cursor-pointer"
         >
-          <FaLinkedinIn size={20} />
+          <FaLinkedinIn size={18} />
         </a>
 
         <a
@@ -39,21 +39,21 @@ const Hero = () => {
           aria-label="Twitter"
           className="text-foreground hover:scale-105 transition cursor-pointer"
         >
-          <FaXTwitter size={20} />
+          <FaXTwitter size={18} />
         </a>
       </div>
-      <h1 className="text-foreground font-semibold text-6xl">
+      <h1 className="mx-auto md:m-0  mb-15 md:mb-0 text-foreground font-semibold text-3xl sm:text-4xl md:text-6xl">
         Fred-Omojole Omoyele
       </h1>
 
-      <p className="text-foreground max-w-2xl font-medium text-xl">
+      <p className=" mb-10 md:mb-0 text-foreground mx-auto md:m-0 max-w-[300px] md:max-w-2xl font-medium text-base sm:text-lg md:text-xl">
         Frontend Engineer building better than yesterday. My goal is to empower
         clients own a powerful online presence. One of my deepest joys comes
         from equipping creative people with the visual tools they need to
         further their work.
       </p>
 
-      <div className="flex justify-end">
+      <div className="flex justify- md:justify-end">
         <Fred />
       </div>
     </section>

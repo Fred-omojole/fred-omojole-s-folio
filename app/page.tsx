@@ -7,7 +7,7 @@ import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="md:relative">
       <>
         <div
           className={cn(
@@ -18,7 +18,7 @@ export default function Home() {
           )}
         />
         <Hero />
-        <NavbarDemo />
+        {/* <NavbarDemo /> */}
       </>
       <div className="-z-10 absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(to_bottom,black_50%,transparent_100%))]"></div>
 
