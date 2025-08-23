@@ -1,18 +1,12 @@
 "use client";
 import React from "react";
 
-export const Menu = ({
-  children,
-}: {
-  // setActive: (item: string | null) => void;
-
-  children: React.ReactNode;
-}) => {
+export const Menu = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
-      className={`border-2 border-foreground bg-[rgb(230,230,230,1)] rounded-full z-10 `}
+      className={`border-3 md:border-4 lg:border-2 border-foreground rounded-lg lg:rounded-full z-10`}
     >
-      <nav className="relative rounded-full border  bg-background flex justify-center   ">
+      <nav className="relative rounded-lg lg:rounded-full bg-background flex flex-col lg:flex-row items-stretch lg:justify-center">
         {children}
       </nav>
     </div>

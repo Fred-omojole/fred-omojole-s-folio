@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./_components/Hero";
 import { cn } from "@/lib/utils";
 import { NavbarDemo } from "./_components/Navbar";
+import { NavbarMobile } from "./_components/NavMobile";
 import Work from "./_components/Work";
 import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
@@ -18,7 +19,8 @@ export default function Home() {
           )}
         />
         <Hero />
-        {/* <NavbarDemo /> */}
+        <NavbarDemo />
+        <NavbarMobile />
       </>
       <div className="-z-10 absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(to_bottom,black_50%,transparent_100%))]"></div>
 
