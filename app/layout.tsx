@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -27,8 +28,8 @@ export const metadata: Metadata = {
     title: "Fred-Omojole's Portfolio",
     description:
       "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
-    url: "",
-    siteName: "",
+    url: "https://yele.vercel.app/",
+    siteName: "yele.vercel.app",
     images: [
       {
         url: "https://github.com/Fred-omojole/fred-omojole-s-folio/blob/master/assets/fredshot.png?raw=true",
@@ -75,7 +76,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${syne.className} antialiased`}>{children}</body>
+      <body className={`${syne.className} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

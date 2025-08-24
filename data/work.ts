@@ -12,7 +12,7 @@ export const projects: projectProp[] = [
     name: "Webify",
     excerpt:
       "Developed Webify, a modern digital agency website with a scalable architecture, bold typography, and high-performance design. The project focused on responsive layouts, clear messaging, and conversion-driven call-to-actions.",
-    image: "/webify.png",
+    image: "/weblix.png",
     buttonText: "View Project",
     buttonLink: "https://weblix-snowy.vercel.app/",
     tech: [
