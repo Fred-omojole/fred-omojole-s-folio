@@ -2,12 +2,12 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="min-h-[70vh] mb-[30px] py-8 sm:py-12 lg:py-20">
-      <h1 className="flex items-center justify-center w-auto text-[72px] sm:text-[100px] md:text-[150px] font-extrabold text-foreground uppercase tracking-tighter leading-snug">
+    <section className="min-h-[70vh] mb-[30px] py-20 sm:py-12 lg:py-20">
+      <h1 className="flex items-center text-center justify-center w-auto lg:text-[120px] text-[40px]  md:text-[80px] font-extrabold text-foreground uppercase tracking-tighter leading-snug">
         let&apos;s connect
       </h1>
-      <div className="flex flex-col mx-auto items-center justify-center max-w-[1180px] flex-wrap leading-snug tracking-tighter px-4">
-        <p className="text-[20px] sm:text-[40px] md:text-[75px] text-center max-w-[1000px]">
+      <div className="flex flex-col mx-auto items-center justify-center max-w-[1180px] flex-wrap leading-snug tracking-tighter px-4 gap-10 md:gap-0">
+        <p className="text-[20px] sm:text-[40px] md:text-[60px] text-center max-w-[1000px]">
           Got a question, proposal, project, or want to work together on
           something?
         </p>

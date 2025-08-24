@@ -4,12 +4,21 @@ import Image from "next/image";
 function Fred() {
   return (
     <div className="flex flex-row gap-1.5 items-center justify-center ">
-      <div className="w-[75px] h-[75px] overflow-hidden rounded-full">
+      <div className="hidden md:block w-[75px] h-[75px] overflow-hidden rounded-full">
         <Image
           src="/fred.JPG"
           alt="Profile picture"
           width={75}
           height={75}
+          className="object-cover object-top"
+        />
+      </div>
+      <div className="block md:hidden w-[55px] h-[55px] overflow-hidden rounded-full">
+        <Image
+          src="/fred.JPG"
+          alt="Profile picture"
+          width={55}
+          height={55}
           className="object-cover object-top"
         />
       </div>
