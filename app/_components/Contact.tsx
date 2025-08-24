@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="min-h-[70vh] mb-[30px] py-20 sm:py-12 lg:py-20">
+    <section
+      id="contact"
+      className="min-h-[70vh] mb-[30px] py-20 sm:py-12 lg:py-20"
+    >
       <h1 className="flex items-center text-center justify-center w-auto lg:text-[120px] text-[40px]  md:text-[80px] font-extrabold text-foreground uppercase tracking-tighter leading-snug">
         let&apos;s connect
       </h1>

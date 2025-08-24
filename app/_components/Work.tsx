@@ -75,7 +75,7 @@ const Work = () => {
                     </div>
                   </div> */}
                   <div className="hidden lg:block rounded-2xl flex-1 overflow-hidden relative mx-auto">
-                    <div className="lg:aspect-[8/6] aspect-[4/3]  "></div>
+                    <div className="lg:aspect-[8/6] aspect-[4/3]"></div>
                     <Image
                       src={image}
                       alt="Project screenshot"

@@ -45,6 +45,20 @@ function Navbar({ className }: { className?: string }) {
   ];
 
   const [open, setOpen] = useState(false);
+  const [preloaderDone, setPreloaderDone] = useState(false);
+
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const isDone = () =>
+      (window as unknown as { __preloaderDone?: boolean }).__preloaderDone ===
+      true;
+    if (isDone()) setPreloaderDone(true);
+
+    const handler = () => setPreloaderDone(true);
+    window.addEventListener("preloader:done", handler);
+    return () => window.removeEventListener("preloader:done", handler);
+  }, []);
 
   const buttonVariants: Variants = {
     closed: { rotate: 0, scale: 1 },
@@ -81,7 +95,7 @@ function Navbar({ className }: { className?: string }) {
     <motion.div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
       initial="hidden"
-      animate="visible"
+      animate={preloaderDone ? "visible" : "hidden"}
       variants={navContainer}
     >
       <div className="relative flex items-center justify-center">
