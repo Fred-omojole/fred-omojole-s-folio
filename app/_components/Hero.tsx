@@ -13,11 +13,11 @@ const Hero = () => {
     >
       <div className="absolute top-4 sm:top-6 right-4 sm:right-8 md:right-20 flex items-center gap-3 sm:gap-4">
         <a
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1Ao1h2iwmGqPgJXX-cMZK2nQbpnevtj5-/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Download resume (PDF)"
-          className="text-foreground hover:scale-105 transition cursor-pointer"
+          className="text-foreground hover:scale-109 transition cursor-pointer"
         >
           <FaFilePdf size={18} />
         </a>
@@ -27,7 +27,7 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="text-foreground hover:scale-105 transition cursor-pointer"
+          className="text-foreground hover:scale-109 transition cursor-pointer"
         >
           <FaLinkedinIn size={18} />
         </a>
@@ -37,7 +37,7 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
-          className="text-foreground hover:scale-105 transition cursor-pointer"
+          className="text-foreground hover:scale-109 transition cursor-pointer"
         >
           <FaXTwitter size={18} />
         </a>

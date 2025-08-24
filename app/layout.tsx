@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
+import type { Viewport } from "next";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -8,9 +9,61 @@ const syne = Syne({
   weight: ["400", "700"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "light",
+};
+
 export const metadata: Metadata = {
-  title: "Fred-Omojole Omoyele ",
-  description: "Portfolio to showcase my impact on businesses",
+  title: "Fred-Omojole Omoyele",
+  description:
+    "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
+  icons: {
+    icon: ["/chef.png?v=4"],
+    shortcut: ["/chef.png"],
+  },
+
+  generator: "Next.js",
+  openGraph: {
+    title: "Fred-Omojole's Portfolio",
+    description:
+      "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
+    url: "",
+    siteName: "",
+    images: [
+      {
+        url: "",
+        width: 1200,
+        height: 630,
+        alt: "Fred-Omojole's Portfolio",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fred-Omojole's Portfolio",
+    description:
+      "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
+    creator: "Freddy's Space — Frontend Engineer",
+    creatorId: "omoyele60762",
+    images: [""],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category:
+    "technology, portfolio, web development,frontend, developer, software, engineering",
 };
 
 export default function RootLayout({
