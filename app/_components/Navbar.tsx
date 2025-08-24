@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Menu } from "./navbar-menu";
 import { cn } from "@/lib/utils";
@@ -31,7 +31,7 @@ const navContainer: Variants = {
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-[85vh] " />
+      <Navbar className="top-[85vh] hidden lg:block " />
     </div>
   );
 }
@@ -41,8 +41,24 @@ function Navbar({ className }: { className?: string }) {
     // { title: "", href: "#services" },
     { title: "works", href: "#works" },
     { title: <HomeIcon />, href: "#home" },
-    { title: "about", href: "/about" },
+    { title: "contact", href: "#contact" },
   ];
+
+  const [preloaderDone, setPreloaderDone] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const isDone = () =>
+      (window as unknown as { __preloaderDone?: boolean }).__preloaderDone ===
+      true;
+
+    if (isDone()) setPreloaderDone(true);
+
+    const handler = () => setPreloaderDone(true);
+    window.addEventListener("preloader:done", handler);
+    return () => window.removeEventListener("preloader:done", handler);
+  }, []);
 
   return (
     <motion.div
@@ -52,12 +68,11 @@ function Navbar({ className }: { className?: string }) {
       )}
       initial="hidden"
       //   variants={navContainer}
-      animate="visible"
+      animate={preloaderDone ? "visible" : "hidden"}
       variants={navContainer}
     >
       <Menu>
         {navContent.map((item, index) => {
-          console.log("Current item:", item);
           return (
             <Link
               href={item.href}
