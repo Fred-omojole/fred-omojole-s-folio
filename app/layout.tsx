@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "",
     images: [
       {
-        url: "",
+        url: "https://github.com/Fred-omojole/fred-omojole-s-folio/blob/master/assets/fredshot.png?raw=true",
         width: 1200,
         height: 630,
         alt: "Fred-Omojole's Portfolio",
@@ -47,7 +47,9 @@ export const metadata: Metadata = {
       "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
     creator: "Freddy's Space — Frontend Engineer",
     creatorId: "omoyele60762",
-    images: [""],
+    images: [
+      "https://github.com/Fred-omojole/fred-omojole-s-folio/blob/master/assets/fredshot.png?raw=true",
+    ],
   },
   robots: {
     index: true,
