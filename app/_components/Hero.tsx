@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="absolute top-4 sm:top-6 right-4 sm:right-8 md:right-20 flex items-center gap-3 sm:gap-4">
         <a
-          href="https://drive.google.com/file/d/18g_hxa5-3QKD96O9s7cR8m_dRLPfBg0y/view?usp=sharing"
+          href="https://drive.google.com/file/d/1rJJNfpdF7Jk8KJPP_oJI91dV1vt1J6PT/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Download resume (PDF)"
