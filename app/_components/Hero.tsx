@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="absolute top-4 sm:top-6 right-4 sm:right-8 md:right-20 flex items-center gap-3 sm:gap-4">
         <a
-          href="https://drive.google.com/file/d/1rJJNfpdF7Jk8KJPP_oJI91dV1vt1J6PT/view?usp=sharing"
+          href="https://drive.google.com/file/d/1BeUKVn1c8S7YHMIuZQdy0vWxvcwGWPUj/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Download resume (PDF)"
@@ -21,6 +21,16 @@ const Hero = () => {
         >
           <FaFilePdf size={18} />
         </a>
+
+        {/* <a
+          href="https://drive.google.com/file/d/1rJJNfpdF7Jk8KJPP_oJI91dV1vt1J6PT/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download resume (PDF)"
+          className="text-foreground hover:scale-109 transition cursor-pointer"
+        >
+          <FaFilePdf size={18} />
+        </a> */}
 
         <a
           href="https://www.linkedin.com/in/omojole/"
