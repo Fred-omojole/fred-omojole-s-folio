@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
+
 import "./globals.css";
-import type { Viewport } from "next";
+
 import { Analytics } from "@vercel/analytics/next";
 
 const syne = Syne({
@@ -10,12 +11,8 @@ const syne = Syne({
   weight: ["400", "700"],
 });
 
-export const viewport: Viewport = {
-  themeColor: "light",
-};
-
 export const metadata: Metadata = {
-  title: "Fred-Omojole Omoyele",
+  title: "Fred-Omojole Omoyele — Frontend Engineer",
   description:
     "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
   icons: {
