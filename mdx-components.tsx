@@ -1,11 +1,11 @@
 import React from "react";
 import type { MDXComponents } from "mdx/types";
-import { Literata } from "next/font/google";
+// import { Literata } from "next/font/google";
 
-const literata = Literata({
-  subsets: ["latin"],
-  variable: "--font-literata",
-});
+// const literata = Literata({
+//   subsets: ["latin"],
+//   variable: "--font-literata",
+// });
 
 const components: MDXComponents = {
   wrapper: ({ children }) => (
@@ -15,14 +15,14 @@ const components: MDXComponents = {
   ),
   h1: (props) => (
     <h1
-      className={`mt-3 text-2xl font-semibold font-plex-sans text-[#102018] `}
+      className="mt-3 mb-10 text-2xl font-semibold font-plex-sans text-[#102018] "
       {...props}
     />
   ),
 
   h2: (props) => (
     <h2
-      className={`mt-3 text-lg font-semibold font-plex-sans text-[#102018] `}
+      className="mt-10 mb-5 text-lg font-semibold font-plex-sans text-[#102018] "
       {...props}
     />
   ),

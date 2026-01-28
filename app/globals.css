@@ -164,3 +164,7 @@ body {
 .font-plex-sans {
   font-family: var(--font-IBM-plex-sans);
 }
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}

@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
@@ -28,12 +27,12 @@ export default function BlogLayout({
                   [background-image:radial-gradient(rgba(120,180,140,0.25)_1px,transparent_0.1px)]"
     >
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-32 z-0
-                   bg-gradient-to-b from-[#c2d3c7]/70 via-[#f5faf7] to-transparent
-                   [mask-image:radial-gradient(ellipse_at_top,black_45%,transparent_100%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-28 z-0
+                   bg-gradient-to-b from-[#c2d3c7]/35 via-[#f5faf7] to-transparent
+                   [mask-image:radial-gradient(ellipse_at_top,black_20%,transparent_100%)]"
       />
 
-      <header>
+      <header className="relative z-10">
         <div className="mx-auto flex max-w-3xl items-center justify-between  py-4">
           <motion.div
             key={isPost ? "post" : "index"}
@@ -58,11 +57,11 @@ export default function BlogLayout({
         </div>
       </header>
 
-      <main className={`${literata.variable} `}>{children}</main>
+      <main className={`${literata.variable} relative z-10`}>{children}</main>
       <div
-        className=" pointer-events-none absolute inset-x-0 bottom-0 h-64 z-0
-                   bg-gradient-to-t from-[#c2d3c7]/70 via-[#f5faf7] to-transparent
-                   [mask-image:radial-gradient(ellipse_at_bottom,black_45%,transparent_100%)]"
+        className=" pointer-events-none absolute inset-x-0 bottom-0 h-52 z-0 pt-10
+                   bg-gradient-to-t from-[#c2d3c7]/25 via-[#f5faf7] to-transparent
+                   [mask-image:radial-gradient(ellipse_at_bottom,black_20%,transparent_100%)]"
       />
     </div>
   );
