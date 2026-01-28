@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
+import { Roboto, Syne } from "next/font/google";
+
 import "./globals.css";
-import type { Viewport } from "next";
+
 import { Analytics } from "@vercel/analytics/next";
 
 const syne = Syne({
@@ -10,12 +11,15 @@ const syne = Syne({
   weight: ["400", "700"],
 });
 
-export const viewport: Viewport = {
-  themeColor: "light",
-};
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
-  title: "Fred-Omojole Omoyele",
+  title: "Fred-Omojole Omoyele — Frontend Engineer",
   description:
     "A portfolio created by Fred to showcase his impact on businesses as well as his online presence.",
   icons: {
@@ -76,7 +80,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${syne.className} antialiased`}>
+      <body className={`${syne.className} ${roboto.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

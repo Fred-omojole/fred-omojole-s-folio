@@ -38,9 +38,9 @@ export function NavbarDemo() {
 
 function Navbar({ className }: { className?: string }) {
   const navContent: NavContents[] = [
-    // { title: "", href: "#services" },
-    { title: "works", href: "#works" },
     { title: <HomeIcon />, href: "#home" },
+    { title: "works", href: "#works" },
+    { title: "Thoughts", href: "/blog" },
     { title: "contact", href: "#contact" },
   ];
 
@@ -64,10 +64,9 @@ function Navbar({ className }: { className?: string }) {
     <motion.div
       className={cn(
         "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 rounded-full",
-        className
+        className,
       )}
       initial="hidden"
-      //   variants={navContainer}
       animate={preloaderDone ? "visible" : "hidden"}
       variants={navContainer}
     >

@@ -1,0 +1,40 @@
+import Buttonexp from "@/components/blog-showcases/Buttonexp";
+
+# I built two hover buttons. One made me uncomfortable
+
+    When done right, animations make an interface feel predictable, faster, and
+    more enjoyable to use. They help you and your product stand out.
+
+    But they can also do the opposite. They can make an interface feel unpredictable, slow, and annoying. They can even make your users lose trust in your product.
+
+    So how do you know when and how to animate to improve the experience?
+
+    Step one is making sure your animations have a purpose — <span className="font-roboto italic text-base text-[#102018]">Emil Kowalski</span>
+
+## Purposeful Animation
+
+Before animating, you need to know the purpose of the animation.<br/>
+As an example, what's the purpose of this meta UI ( UI that teaches UI) I built?
+
+<Buttonexp />
+
+This animation cominucates correctness vs incorrectness of a hover pattern. Although, not all hover interactions are equal. Some help the user. some don't.<br/>
+
+<span className="text-[#102018] mt-2">
+  But sometimes the purpose of an animation might just be to bring delight. This
+  applies to animations or interactions seen rarely.
+</span>
+
+## Why one hover feels wrong
+
+According to Material Design 3, motion durations are grouped into four categories: <span className="italic font-medium">short</span>, <span className="italic font-medium">medium</span>, <span className=" font-medium italic">long</span>, <span className="italic font-medium">very long</span>.
+
+Hover interactions fall under short duration, typically within <span className="font-medium italic">50ms</span> and <span className="font-medium italic">200ms</span>.
+
+In practice though, anything below ~100ms can feel too snappy, while anything above 200ms starts to feel slow and time-wasting. For hover, I would suggest <span className="font-medium italic">100-200ms</span>.
+
+This is where the wrong hover fails.
+
+You can feel, just by interacting with the two samples, that one has a longer duration. That extra time introduces friction into an interaction that’s meant to feel instant. It goes against the short-duration principle and makes the interface feel less responsive.
+
+Remember, speed isn’t optional for frequent interactions — <span className="font-roboto italic text-base text-[#102018]">Fred-Omojole Omoyele</span>
