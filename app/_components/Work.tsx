@@ -74,31 +74,29 @@ const Work = () => {
                       />
                     </div>
                   </div> */}
-                  <div className="hidden lg:block rounded-2xl flex-1 overflow-hidden relative mx-auto">
-                    <div className="lg:aspect-[8/6] aspect-[4/3]"></div>
+                  <div className="hidden lg:flex  flex-1 overflow-hidden items-center justify-center bg-[#1a1f1a]">
                     <Image
                       src={image}
                       alt="Project screenshot"
-                      width={1081} // natural size
-                      height={1081} // natural size
-                      className="object-cover  w-full h-full absolute inset-0 max-w-[100%]"
+                      width={1081}
+                      height={1081}
+                      className="object-contain w-full h-auto max-h-[50vw]"
                       priority
                     />
                   </div>{" "}
                 </CardContent>
-                <div className=" rounded-2xl flex-1 overflow-hidden relative mx-auto block lg:hidden w-full">
-                  <div className="relative w-full aspect-[4/3]">
-                    <Image
-                      src={image}
-                      alt="Project screenshot"
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
+                <div className=" overflow-hidden mx-auto block lg:hidden w-full bg-[#1a1f1a]">
+                  <Image
+                    src={image}
+                    alt="Project screenshot"
+                    width={1081}
+                    height={1081}
+                    className="object-contain w-full h-auto"
+                    priority
+                  />
                 </div>
               </Card>
-            )
+            ),
           )}
         </div>
       </div>

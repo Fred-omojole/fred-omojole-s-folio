@@ -9,6 +9,31 @@ export type projectProp = {
 
 export const projects: projectProp[] = [
   {
+    name: "Payedge",
+    excerpt:
+      "Built an interactive payment flow simulator that models real-world transactional states across success paths, failure scenarios, and recovery flows. The system is driven by a deterministic state machine, allowing engineers, product teams, and QA to simulate and inspect how a checkout pipeline behaves under conditions like network timeouts, card declines, idempotency collisions, and partial failures.",
+    image: "/payedge.png",
+    buttonText: "View Project",
+    buttonLink: "https://payedge-omega.vercel.app/",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React Compiler",
+      "React-Hook-Form",
+      "Tailwind CSS",
+      "ShadCN UI",
+    ],
+  },
+  {
+    name: "Onekard's Blog",
+    excerpt:
+      "Built a CMS-powered content platform enabling OneKard’s marketing team to publish and manage content independently while improving performance and SEO readiness. Built the initial version in early 2025; the current product reflects continued iteration beyond my contribution.",
+    image: "/onekard.png",
+    buttonText: "View Project",
+    buttonLink: "https://www.onekard.io/blog",
+    tech: ["Next.js", "TypeScript", "Prismic CMS", "Tailwind CSS", "Figma"],
+  },
+  {
     name: "Webify",
     excerpt:
       "Developed Webify, a modern digital agency website with a scalable architecture, bold typography, and high-performance design. The project focused on responsive layouts, clear messaging, and conversion-driven call-to-actions.",
@@ -21,41 +46,6 @@ export const projects: projectProp[] = [
       "Framer Motion",
       "Tailwind CSS",
       "Aceternity UI",
-    ],
-  },
-  {
-    name: "Onekard's Blog",
-    excerpt:
-      "Developed a scalable, SEO-optimized blog with Next.js, TypeScript, and Prismic CMS, empowering OneKard’s marketing team to publish content faster and improve site performance.",
-    image: "/onekard.png",
-    buttonText: "Currently Unavailable",
-    // buttonLink: "https://weblix-snowy.vercel.app/",
-    tech: ["Next.js", "TypeScript", "Prismic CMS", "Tailwind CSS"],
-  },
-
-  {
-    name: "Inflatable",
-    excerpt:
-      "Developed a clone of Inflatable's Landing page, a cutting-edge e-commerce platform specializing in inflatable products.",
-    image: "/inflate4.png",
-    buttonText: "View Project",
-    buttonLink: "https://creative-studio-landing-page.vercel.app/",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    name: "Devstack",
-    excerpt:
-      "Designed and developed a developer-first platform that makes sharing tech stacks simple, engaging, and community-driven.",
-    image: "/devstack 1.png",
-    buttonText: "Currently Unavailable",
-    // buttonLink: "/projects/project2",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Convex",
-      "React-Hook-Form",
-      "ShadCN UI",
     ],
   },
 ];
