@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { projects } from "@/data/work";
 import Image from "next/image";
+import Link from "next/link";
 
 import { ArrowRight } from "lucide-react";
 const Work = () => {
@@ -15,7 +16,10 @@ const Work = () => {
         </div>
         <div className="grid grid-cols-1 gap-4">
           {projects.map(
-            ({ name, excerpt, image, buttonText, buttonLink, tech }, id) => (
+            (
+              { name, excerpt, image, buttonLink, tech, slug, walkthrough },
+              id,
+            ) => (
               <Card
                 key={id}
                 className="rounded-[1.5rem], p-2 bg-gradient-to-b from-[#4f564d] to-[#000b00] text-[#d5d6d0]"
@@ -40,7 +44,20 @@ const Work = () => {
                       </p>
                     </div>
 
-                    {buttonLink ? (
+                    {walkthrough ? (
+                      <Link
+                        className="group z-0 relative cursor-pointer flex pt-[0.25rem] pb-[0.25rem] pr-[0.25em] pl-[1.5rem] flex-row gap-[0.75rem] border border-[#e8e8e3] rounded-4xl text-[#4f564d] text-[0.7rem] leading-[1.4em] items-center uppercase font-bold justify-center tracking-[0.6em] overflow-hidden"
+                        href={`/work/${slug}`}
+                      >
+                        <div className="-z-1 bg-[#e8e8e3] inset-0 absolute rounded-[2.5rem] transition-all duration-300 ease-in-out group-hover:bg-[#dcdcd7]"></div>
+
+                        <div className="z-1 relative">View Project</div>
+
+                        <div className="z-1 relative transition-transform duration-300 ease-in-out group-hover:translate-x-1.5">
+                          <ArrowRight />
+                        </div>
+                      </Link>
+                    ) : buttonLink ? (
                       <a
                         className="group z-0 relative cursor-pointer flex pt-[0.25rem] pb-[0.25rem] pr-[0.25em] pl-[1.5rem] flex-row gap-[0.75rem] border border-[#e8e8e3] rounded-4xl text-[#4f564d] text-[0.7rem] leading-[1.4em] items-center uppercase font-bold justify-center tracking-[0.6em] overflow-hidden"
                         href={buttonLink}
@@ -49,7 +66,7 @@ const Work = () => {
                       >
                         <div className="-z-1 bg-[#e8e8e3] inset-0 absolute rounded-[2.5rem] transition-all duration-300 ease-in-out group-hover:bg-[#dcdcd7]"></div>
 
-                        <div className="z-1 relative">{buttonText}</div>
+                        <div className="z-1 relative">View Project</div>
 
                         <div className="z-1 relative transition-transform duration-300 ease-in-out group-hover:translate-x-1.5">
                           <ArrowRight />
@@ -60,7 +77,7 @@ const Work = () => {
                         className="cursor-not-allowed text-[#b9bab6]"
                         aria-disabled="true"
                       >
-                        {buttonText}
+                        Currently Unavailable
                       </span>
                     )}
                   </div>
