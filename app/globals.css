@@ -137,3 +137,34 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .blog-list .blog-card {
+    transition:
+      opacity 150ms ease-in-out,
+      filter 150ms ease-in-out,
+      transform 150ms ease-in-out;
+  }
+
+  .blog-list:hover .blog-card {
+    opacity: 0.25;
+    filter: blur(1px);
+  }
+
+  .blog-list .blog-card:hover {
+    opacity: 1 !important;
+    filter: none;
+  }
+}
+
+.font-Literata {
+  font-family: var(--font-literata);
+}
+
+.font-plex-sans {
+  font-family: var(--font-IBM-plex-sans);
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}

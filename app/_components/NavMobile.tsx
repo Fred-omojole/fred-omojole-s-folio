@@ -41,7 +41,7 @@ function Navbar({ className }: { className?: string }) {
   const navContent: NavContents[] = [
     { title: "works", href: "#works" },
     { title: <HomeIcon />, href: "#home" },
-    { title: "about", href: "/about" },
+    { title: "contact", href: "#contact" },
   ];
 
   const [open, setOpen] = useState(false);
