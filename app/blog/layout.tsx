@@ -22,7 +22,7 @@ export default function BlogLayout({
 
   return (
     <div
-      className=" relative min-h-screen bg-[#f5faf7] pt-24
+      className="relative min-h-screen bg-[#f5faf7] pt-8 sm:pt-12 md:pt-24
                   [background-size:24px_24px]
                   [background-image:radial-gradient(rgba(120,180,140,0.25)_1px,transparent_0.1px)]"
     >
@@ -33,7 +33,7 @@ export default function BlogLayout({
       />
 
       <header className="relative z-10">
-        <div className="mx-auto flex max-w-3xl items-center justify-between  py-4">
+        <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-4">
           <motion.div
             key={isPost ? "post" : "index"}
             initial={{ y: -8, opacity: 0 }}
