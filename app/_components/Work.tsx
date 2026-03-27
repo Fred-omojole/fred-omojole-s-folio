@@ -30,7 +30,7 @@ const Work = () => {
                       {name}
                     </h2>
                     <div className="space-y-3 ">
-                      <p className=" w-full max-w-full lg:text-lg text-[1.125rem] leading-[1.6em] tracking-[0em] font-light">
+                      <p className="w-full max-w-full sm:text-base text-sm lg:text-lg md:text-[1.125rem] leading-[1.6em] tracking-[0em] font-light">
                         {excerpt}
                       </p>
 
