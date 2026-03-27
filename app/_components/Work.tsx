@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 const Work = () => {
   return (
-    <section id="works" className=" md:pt-[125px] pt-[50px]">
+    <section id="works" className="pt-[50px] sm:pt-[75px] md:pt-[125px]">
       <div className="mx-auto w-[94vw]">
         <div className=" flex flex-row gap-2 items-center justify-center uppercase text-foreground mb-10">
           <div className="">featured work</div>
