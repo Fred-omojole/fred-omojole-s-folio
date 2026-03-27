@@ -98,7 +98,7 @@ const Work = () => {
                   </div>
                 </div>
               </Card>
-            )
+            ),
           )}
         </div>
       </div>
