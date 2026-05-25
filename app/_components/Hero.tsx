@@ -42,7 +42,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="https://x.com/omoyele60762"
+          href="https://x.com/yelebuilds"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
@@ -71,8 +71,9 @@ const Hero = () => {
           <p>
             I’m currently exploring opportunities as a frontend/product uI
             engineer, particularly in product-focused teams building meaningful,
-            user-facing systems. I’m also open to contract roles and freelance
-            work.
+            user-facing systems. I’m actively open to{" "}
+            <span className="font-bold">contract roles</span> and{" "}
+            <span className="font-bold">freelance opportunities.</span>
           </p>
         </div>
 
