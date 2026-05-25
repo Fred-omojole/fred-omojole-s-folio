@@ -42,7 +42,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="https://x.com/omoyele60762"
+          href="https://x.com/yelebuilds"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
