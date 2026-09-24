@@ -25,8 +25,8 @@ function Fred() {
 
       <div className="text-foreground mt-[20px]">
         <p>
-          Frontend Engineer
-          <br /> Formerly @ oneKard.
+          <span className="font-bold">Frontend Engineer</span>
+          <br /> Interfaces • Interaction • AI
         </p>
       </div>
     </div>

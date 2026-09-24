@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="py-20 sm:py-28 md:py-40 mx-4 sm:mx-8 md:mx-20 h-auto md:h-screen flex flex-col justify-between"
+      className="relative py-20 sm:py-28 md:py-40 mx-4 sm:mx-8 md:mx-20 h-auto md:h-screen flex flex-col justify-center gap-10 md:gap-14"
     >
       <div className="absolute top-4 sm:top-6 right-4 sm:right-8 md:right-20 flex items-center gap-3 sm:gap-4">
         <a
@@ -51,6 +51,7 @@ const Hero = () => {
           <FaXTwitter size={18} />
         </a>
       </div>
+
       <h1 className="mx-auto md:mx-0 mb-10 md:mb-10 lg:mb-12 text-foreground font-semibold text-3xl sm:text-4xl md:text-6xl">
         Fred-Omojole Omoyele
       </h1>
@@ -58,22 +59,21 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-16">
         <div className="text-foreground mx-auto md:mx-0 max-w-[340px] sm:max-w-[480px] md:max-w-xl lg:max-w-2xl font-medium text-sm sm:text-base md:text-lg leading-relaxed space-y-4">
           <p>
-            I’m a frontend engineer based in Lagos, Nigeria. I enjoy building
-            product interfaces that are fast and thoughtfully structured.
+            I’m a frontend engineer based in Lagos, Nigeria, building
+            thoughtful product interfaces and exploring new ways people
+            interact with software.
           </p>
           <p>
-            Most recently, I worked as a contract frontend engineer at{" "}
-            <span className="font-bold">Clusta</span>, where I contributed to
-            parts of the design system and built product features across the
-            application. Previously, I have also worked at{" "}
-            <span className="font-bold">Onekard</span>.
+            Since 2023, I’ve worked across fintech, product interfaces,
+            internal tools, and now emerging AI systems. I currently work as
+            an engineering intern at{" "}
+            <span className="font-bold">Leadway Health</span>, while
+            continuing to explore the intersection of interface, interaction,
+            and technology.
           </p>
           <p>
-            I’m currently exploring opportunities as a frontend/product uI
-            engineer, particularly in product-focused teams building meaningful,
-            user-facing systems. I’m actively open to{" "}
-            <span className="font-bold">contract roles</span> and{" "}
-            <span className="font-bold">freelance opportunities.</span>
+            I care about the details that make software feel clear,
+            responsive, and effortless.
           </p>
         </div>
 

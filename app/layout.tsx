@@ -4,6 +4,7 @@ import { Roboto, Syne } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
+import MusicToggle from "./_components/MusicToggle";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -82,6 +83,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${syne.className} ${roboto.variable} antialiased`}>
         {children}
+        <MusicToggle />
         <Analytics />
       </body>
     </html>
