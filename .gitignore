@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# dayshoots videos are hosted on a CDN, not in git
+public/dayshoots/*.mp4
