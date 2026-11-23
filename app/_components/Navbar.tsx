@@ -40,6 +40,7 @@ function Navbar({ className }: { className?: string }) {
   const navContent: NavContents[] = [
     { title: <HomeIcon />, href: "#home" },
     { title: "works", href: "#works" },
+    { title: "dayshoots", href: "/dayshoots" },
     { title: "Thoughts", href: "/blog" },
     { title: "contact", href: "#contact" },
   ];
@@ -52,7 +53,6 @@ function Navbar({ className }: { className?: string }) {
     const isDone = () =>
       (window as unknown as { __preloaderDone?: boolean }).__preloaderDone ===
       true;
-
     if (isDone()) setPreloaderDone(true);
 
     const handler = () => setPreloaderDone(true);
@@ -63,7 +63,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <motion.div
       className={cn(
-        "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 rounded-full",
+        "fixed top-10 inset-x-0 w-fit mx-auto z-50 rounded-full",
         className,
       )}
       initial="hidden"
@@ -79,14 +79,13 @@ function Navbar({ className }: { className?: string }) {
               className={`${index === 0 ? "hover:rounded-l-full" : ""} ${
                 index != 0 ? "border-l border-solid" : ""
               }  ${
-                index === navContent.length - 1 ? "hover: rounded-r-full" : ""
-              } capitalize cursor-pointer w-full   flex items-center justify-center text-foreground  text-[14px] leading-[132%] tracking-[-0.14px]  pt-6 pb-6 pl-8 pr-8 hover:px-[48px] transition-all ease-in-out hover:bg-[#bbc3b9]`}
+                index === navContent.length - 1 ? "hover:rounded-r-full" : ""
+              } capitalize cursor-pointer whitespace-nowrap flex items-center justify-center text-foreground text-[14px] leading-[132%] tracking-[-0.14px] pt-6 pb-6 pl-8 pr-8 hover:px-[48px] transition-all duration-300 ease-in-out hover:bg-[#bbc3b9]`}
             >
               {index === navContent.length - 1 ? (
                 <>
-                  {" "}
-                  <div className="">
-                    <span className="relative inline-flex h-2 w-2 mr-1  ">
+                  <div className="flex items-center gap-1.5">
+                    <span className="relative inline-flex h-2 w-2">
                       <span className="animate-ping absolute h-full w-full rounded-full bg-foreground" />
                       <span className="rounded-full h-2 w-2 bg-foreground" />
                     </span>

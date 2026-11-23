@@ -40,6 +40,7 @@ export function NavbarMobile() {
 function Navbar({ className }: { className?: string }) {
   const navContent: NavContents[] = [
     { title: "works", href: "#works" },
+    { title: "dayshoots", href: "/dayshoots" },
     { title: <HomeIcon />, href: "#home" },
     { title: "Thoughts", href: "/blog" },
     { title: "contact", href: "#contact" },
@@ -60,7 +61,6 @@ function Navbar({ className }: { className?: string }) {
     window.addEventListener("preloader:done", handler);
     return () => window.removeEventListener("preloader:done", handler);
   }, []);
-
   const buttonVariants: Variants = {
     closed: { rotate: 0, scale: 1 },
     open: { rotate: 90, scale: 1.02 },

@@ -58,19 +58,5 @@ export const preLoaderAnim = () => {
         } catch {}
         window.dispatchEvent(new Event("preloader:done"));
       }
-      // trigger mobile landing behavior
-      mobileLanding();
     });
-};
-
-export const mobileLanding = () => {
-  if (window.innerWidth < 763) {
-    tl.from(".landing__main2", {
-      duration: 1,
-      delay: 0,
-      opacity: 0,
-      y: 80,
-      ease: "expo.easeOut",
-    });
-  }
 };
