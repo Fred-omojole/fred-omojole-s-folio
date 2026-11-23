@@ -10,7 +10,7 @@ function Fred() {
           alt="Profile picture"
           width={75}
           height={75}
-          className="object-cover object-top"
+          className="h-full w-full object-cover object-top"
         />
       </div>
       <div className="block md:hidden w-[55px] h-[55px] overflow-hidden rounded-full">
@@ -19,7 +19,7 @@ function Fred() {
           alt="Profile picture"
           width={55}
           height={55}
-          className="object-cover object-top"
+          className="h-full w-full object-cover object-top"
         />
       </div>
 
